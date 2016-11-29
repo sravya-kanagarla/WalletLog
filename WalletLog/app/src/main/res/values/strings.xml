@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WalletLog</string>
+    <string name="add_expense">Add recur expense</string>
+    <string name="categoryChart">Category chart</string>
+    <string name="about">About</string>
+    <string name="graph">Chart</string>
+    <string name="settings">View Expenses</string>
+    <string name="title_activity_date_particulars">DateParticulars</string>
+    <string name="title_activity_graph">GRAPH</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="help"><a href="https://accounts.google.com/ServiceLogin?sacu=1scc=1continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fosid=1service=mailss=1ltmpl=defaultrm=false#identifier">walletlogsvecw@gmail.com</a></string>
+    <string name="mail"><a href="https://accounts.google.com/ServiceLogin?sacu=1scc=1continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fosid=1service=mailss=1ltmpl=defaultrm=false#identifier">walletlog@svecw.edu.in</a></string>
+    <string name="facebook"><a href="https://www.facebook.com/WalletLog-185851838455160/?fref=ts">WalletLog</a></string>
+
+</resources>

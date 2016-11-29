@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="svecw.walletlog.Expenses"
+    tools:showIn="@layout/activity_date_particulars"
+    android:background="@drawable/wl">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthParticularsLayout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/previousBtn"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_action_arrow_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalAmountView"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextBtn"
+            android:src="@drawable/ic_action_arrow_right"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/monthParticularsLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daily_expenses"
+            android:textColor="#324F78"
+            android:textSize="17dp"
+            android:layout_marginTop="9dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/saveBtn"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/dailyActivity"
+        android:layout_below="@id/linear1"></ListView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/one_time_expenses"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dailyActivity"
+        android:textColor="#324F78"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        ></TextView>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/oneTimeExpenses"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/one_time_expenses"></ExpandableListView>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paidBillsText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/oneTimeExpenses"
+        android:textColor="#324F78"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/paidBills"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/paidBillsText"></ListView>
+
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalAmountView"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/paidBills"
+        android:gravity="center"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blink"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/tab_indicator_text"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/paidBills"
+        android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+

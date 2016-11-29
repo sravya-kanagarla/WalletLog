@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wl">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_icon"
+        android:src="@drawable/icon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+         />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tag"
+        android:src="@drawable/tag"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag"
+        android:id="@+id/about1"
+        android:textSize="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="      It is a monthly expense tracker. It organises all sort of expenses."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about2"
+        android:layout_below="@+id/about1"
+        android:textSize="17dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="In this one can note their expenses like daily, monthly and one time expenses.They can view the expenditure through a bar graph comparing with all the month in a year."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about3"
+        android:layout_below="@+id/about2"
+        android:textSize="17dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="One can also view the graph category wise. Expenses can be viewd date wise and month wise. So with this tracking and noting of expenses become easy."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/about4"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/about3"
+        android:textSize="17dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text=" WalletLog is personal and user friendly app.  "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/about3"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="6dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facebook"
+
+
+                android:src="@drawable/ic_action_facebook" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="follow us on: "
+                android:textSize="18dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facebook"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/link1"
+                android:textSize="18dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/help"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/help"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mail us at:"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/link2"
+                android:text="@string/help"
+                android:textSize="18dp"
+                android:layout_marginLeft="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/link3"
+                android:text="@string/mail"
+                android:textSize="18dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp" />
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+ </RelativeLayout>
+</ScrollView>
+
+
